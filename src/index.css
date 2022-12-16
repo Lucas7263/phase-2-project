@@ -1,3 +1,9 @@
+
+body {
+    background-color: rgb(50, 50, 146);
+    
+}
+
 .title {
    margin: auto;
    width: 50%;
@@ -9,5 +15,13 @@
 .darkmode {
     background-color: rgb(165, 165, 236);
     padding: 10px;
-   
+    margin: auto;
+    text-align: right;
+    
+}
+
+.time {
+    color: crimson;
+    margin: auto;
+    text-align: center;
 }
