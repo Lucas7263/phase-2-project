@@ -3,15 +3,27 @@
     "movies": [
       {
         "id": 1,
-        "name": "Woody",
-        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": 8
+        "name": "Big Trouble in Little China",
+        
+        "image": "https://en.wikipedia.org/wiki/Big_Trouble_in_Little_China#/media/File:Big_Trouble_in_Little_China_Film_Poster.jpg",
+        
+        "about": "A rough-and-tumble trucker and his side kick face off with an ancient sorcerer in a supernatural battle beneath Chinatown."
       },
+
       {
         "id": 2,
-        "name": "Buzz Lightyear",
-        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-        "likes": 14
+        "name": "The Lord of the Rings: The Return of the King",
+       
+        "image": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King#/media/File:The_Lord_of_the_Rings_-_The_Return_of_the_King_(2003).jpg",
+
+        "about": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
+      },
+
+      {
+        "id": 3,
+        "name": "The Shawshank Redemption",
+        "image": "https://en.wikipedia.org/wiki/The_Shawshank_Redemption#/media/File:ShawshankRedemptionMoviePoster.jpg",
+        "about": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
       }
     ]
   }

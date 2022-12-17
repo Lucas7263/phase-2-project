@@ -2,9 +2,7 @@ import React, {useEffect, useState} from "react";
 
 function Header() {
   
-
-      
-    function Clock() {
+ function Clock() {
         const [time, setTime] = useState(new Date());
       
         useEffect(() => {
