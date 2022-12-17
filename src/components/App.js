@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Header from "./Header";
+import MovieList from './MovieList';
+import movieData from '../movieData.json';
 
 
 
@@ -12,8 +14,11 @@ function App() {
   //  } function to set the state from the conditional rendering from Header
   // changeDark={changeDark}
     return(
-     
-        <Header />
+            <div>
+                <Header darkMode={darkMode}/>
+                <MovieList movieData={movieData}/>
+            </div>
+            
        
     )
 }

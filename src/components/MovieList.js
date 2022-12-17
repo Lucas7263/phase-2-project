@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-function Movielist() {
+
+function Movielist(movieData) {
     return (
-        console.log('test')
+        
+        <div> {console.log(movieData)} </div>
     )
 }
 
