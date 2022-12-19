@@ -1,10 +1,13 @@
 import React from 'react';
 
 
-function Movielist(movieData) {
+function Movielist() {
+    console.log()
     return (
-        
-        <div> {console.log(movieData)} </div>
+        <div>
+            
+        </div>
+       
     )
 }
 

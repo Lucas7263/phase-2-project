@@ -1,7 +1,15 @@
 
 body {
-    background-color: rgb(50, 50, 146);
+    background-color: rgb(86, 86, 153);
     
+}
+
+ .App {
+    background-color: rgb(50, 50, 146);
+}
+
+ .App-light {
+    background-color: rgb(214, 214, 235);
 }
 
 .title {
@@ -12,7 +20,7 @@ body {
    text-align: center;
 }
 
-.darkmode {
+.darkmodebutton {
     background-color: rgb(165, 165, 236);
     padding: 10px;
     margin: auto;

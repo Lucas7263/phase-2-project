@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-function Header() {
+function Header({darkMode, toggleDarkMode}) {
   
  function Clock() {
         const [time, setTime] = useState(new Date());
@@ -13,13 +13,14 @@ function Header() {
       
         return <div>{time.toString()}</div>;
       }
-    
-
+      
+      const buttonTextContent = darkMode ? "Light Mode" : "Dark Mode"
+      const handleClick = () => toggleDarkMode()
     return (
         <div>
-            <h1 class="title">Luke's Favorite Movies</h1>
-            <button class="darkmode">Dark Mode</button>
-            <div class="time">{Clock()}</div>
+            <h1 className="title">Luke's Favorite Movies</h1>
+            <button className="darkmodebutton" onClick={handleClick}>{buttonTextContent}</button>
+            <div className="time">{Clock()}</div>
            
         </div>
     )
