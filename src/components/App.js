@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Header from "./Header";
 import MovieList from './MovieList';
-
+import Movie from './Movie';
 
 // sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
 //terminal code for host error
@@ -20,21 +20,15 @@ function App() {
       .then(data => setMovieData(data))
 
     }, [])
-    console.log(movieData)
-    // const movieData = (data) => {
-    //    return  data.map(movie => {
-    //       // console.log(movie)
-    //       return movie
-    //     })
-        
-    // } 
+    
+   
     
     return(
             <div className={darkMode ? "App" : "App-light"}>
                 <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
                 
                <MovieList movieData={movieData}/>
-       
+              
             </div>
             
        
@@ -44,15 +38,7 @@ function App() {
 export default App;
 
 
- {/* {movieData.map(movie => {
-        return (
-            <div className="box">
-              <MovieList title={movie.title} image={movie.image} about={movie.about}/>  
-                
-            </div>
-        )
-    })}    */}
-                {/* <MovieList movieData={movieData}/> */}
+ 
 
                 // json-server --watch movieData.json --port 8000
                 //command for watching my server

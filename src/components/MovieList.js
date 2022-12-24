@@ -3,14 +3,17 @@ import Movie from './Movie';
 
 
 function Movielist({movieData}) {
-    console.log()
+  
    const movies = movieData.map(movie => {
-          return (<Movie movie={movie}/>
+          return (<Movie key={movie.id} movie={movie}/>
           )
    })  
+  
     return (
         <div>
-            {movies}
+            
+            <h3>{movies}</h3>
+            
         </div>
        
     )
