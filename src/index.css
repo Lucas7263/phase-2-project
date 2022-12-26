@@ -31,7 +31,7 @@ body {
 .movie {
     margin: auto;
     width: 50%;
-    border: 3px solid rgb(15, 6, 131);
+    border: 4px solid rgb(15, 6, 131);
     padding: 10px;
     text-align: center;
 }
