@@ -9,7 +9,8 @@ import Movie from './Movie';
 function App() {
    const [darkMode, setDarkMode] = useState(true);
   const [movieData, setMovieData] = useState([]);
-   function toggleDarkMode() {
+   
+  function toggleDarkMode() {
     setDarkMode(!darkMode)
     
    } 

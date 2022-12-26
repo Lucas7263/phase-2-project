@@ -7,11 +7,12 @@ function Movie({movie}) {
     
     
     return (
-        <div>
+        <div className='movie'>
             <h2>{name}</h2>
-            <p>{about}</p>
             <img src={image} alt={name}></img>
+            <p>{about}</p>
             <button>Delete</button>
+            <button>Update</button>
         </div>
     )
 }
