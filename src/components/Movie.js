@@ -11,8 +11,8 @@ function Movie({movie}) {
             <h2>{name}</h2>
             <img src={image} alt={name}></img>
             <p>{about}</p>
-            <button>Delete</button>
-            <button>Update</button>
+            <button className='movieButton'>Delete</button>
+            <button className='movieButton'>Update</button>
         </div>
     )
 }

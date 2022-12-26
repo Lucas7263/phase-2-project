@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Header from "./Header";
 import MovieList from './MovieList';
-import Movie from './Movie';
+
 
 // sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
 //terminal code for host error
@@ -14,6 +14,8 @@ function App() {
     setDarkMode(!darkMode)
     
    } 
+   const handleClick = () => toggleDarkMode()
+   const buttonTextContent = darkMode ? "Light Mode" : "Dark Mode"
   
     useEffect(() => {
       fetch( 'http://localhost:8000/movies')
@@ -22,11 +24,12 @@ function App() {
 
     }, [])
     
-   
-    
+    // toggleDarkMode={toggleDarkMode}
+    // <Header darkMode={darkMode} handleClick={handleClick}/>
     return(
             <div className={darkMode ? "App" : "App-light"}>
-                <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+               <button className="darkmodebutton" onClick={handleClick}>{buttonTextContent}</button>
+                <Header />
                 
                <MovieList movieData={movieData}/>
               

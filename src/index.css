@@ -1,8 +1,8 @@
 
-body {
+/* body {
     background-color: rgb(86, 86, 153);
     
-}
+} */
 
  .App {
     background-color: rgb(50, 50, 146);
@@ -34,6 +34,14 @@ body {
     border: 4px solid rgb(15, 6, 131);
     padding: 10px;
     text-align: center;
+    
+}
+
+.movieButton {
+    background-color: goldenrod;
+    padding: 10px;
+    margin: auto;
+    margin-left: 10px;
 }
 
 .time {
