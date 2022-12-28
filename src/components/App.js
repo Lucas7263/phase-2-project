@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import Header from "./Header";
 import MovieList from './MovieList';
 
+import {Switch, Route} from "react-router-dom";
+
 
 // sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"
 //terminal code for host error
