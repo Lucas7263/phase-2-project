@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Header from "./Header";
 import MovieList from './MovieList';
 import NavBar from './NavBar';
-import {Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import AddMovie from './AddMovie';
 
 
@@ -36,31 +36,19 @@ function App() {
                <button className="darkmodebutton" onClick={handleClick}>{buttonTextContent}</button>
                 <Header />
                 
-               <MovieList movieData={movieData}/>
+               {/* <MovieList movieData={movieData}/> */}
               
                  
                   <NavBar onPageChange={setPage} />
-                    
-                   <Routes>
-                        <Route path="/AddMovie" element={<AddMovie />}  />
-                        <Route path={page} element={<MovieList />} />
+                 
+                    <Routes>
+                        <Route path="AddMovie" element={<AddMovie />}  />
+                        <Route path={page} element={<MovieList movieData={movieData}/>} />
                     </Routes>       
-
-                        
-                             
-                        
-
-                        
-                   
-          
-                   
-                                
-               
-               
-         
-              
-            </div>
-         
+                  
+                  
+                </div>
+                              
        
     )
 }
