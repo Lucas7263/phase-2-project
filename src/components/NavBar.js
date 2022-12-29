@@ -15,8 +15,9 @@ function handleLinkClick(e) {
         return (
             <div>
                 <nav className='nav'>
-                <Link onClick={handleLinkClick} href="/">Movie List</Link>
-                <Link onClick={handleLinkClick} href="/AddMovie">Add Movie</Link>
+                    
+                <Link onClick={handleLinkClick} to="/">Movies</Link>
+                <Link onClick={handleLinkClick} to="/AddMovie">Add Movie</Link>
               
             </nav>
          

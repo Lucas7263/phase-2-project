@@ -38,23 +38,23 @@ function App() {
                 
                <MovieList movieData={movieData}/>
               
-                   <NavBar onPageChange={setPage} 
-              //       {/* <Routes>
-                  
-              //     <Route path="/AddMovie">
-              //         <AddMovie />
-              //     </Route>
+                 
+                  <NavBar onPageChange={setPage} />
+                    
+                   <Routes>
+                        <Route path="/AddMovie" element={<AddMovie />}  />
+                        <Route path={page} element={<MovieList />} />
+                    </Routes>       
 
-              //     <Route path="MovieList">
-              //         <MovieList /> 
-              //     </Route>
+                        
+                             
+                        
 
-              //     <Route path="*">
-              //       <h1>404 not found</h1>
-              //     </Route>
-
-              //  </Routes>  */}
-                   />                   
+                        
+                   
+          
+                   
+                                
                
                
          

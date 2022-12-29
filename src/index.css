@@ -1,8 +1,8 @@
 
-/* body {
-    background-color: rgb(86, 86, 153);
+body {
+    margin: 0;
     
-} */
+}
 
  .App {
     background-color: rgb(50, 50, 146);
@@ -24,7 +24,8 @@
     background-color: rgb(165, 165, 236);
     padding: 10px;
     margin: auto;
-   
+    display: flex;
+    
     
 }
 
@@ -51,7 +52,16 @@
 }
 
 .nav {
-    background-color: pink;
-    position: flex;
-    text-align: center
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    
+    width: 50%;
+    gap: 1rem;
+    padding: 0 1rem;
+    
+    /* position: absolute;
+    top: 0px;  moves nav links to top of page but leaves blank strip at bottom of page*/
+    
 }
