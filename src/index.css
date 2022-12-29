@@ -49,3 +49,9 @@
     margin: auto;
     text-align: center;
 }
+
+.nav {
+    background-color: pink;
+    position: flex;
+    text-align: center
+}
