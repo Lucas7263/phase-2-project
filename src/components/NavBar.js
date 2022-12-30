@@ -1,25 +1,20 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 
-function NavBar({onPageChange}) {
+function NavBar() {
 
 
 
-function handleLinkClick(e) {
-    e.preventDefault();
-    onPageChange(e.target.pathname)
-}
 
         return (
             <div>
                 <nav className='nav'>
                     
-                <Link onClick={handleLinkClick} to="/">Movies</Link>
-                <Link onClick={handleLinkClick} to="/AddMovie">Add Movie</Link>
-              
-            </nav>
+                <NavLink  exact to="/Movies">Movies</NavLink>
+                <NavLink  to="/AddMovie">Add Movie</NavLink>
+                </nav>
          
             </div>
             

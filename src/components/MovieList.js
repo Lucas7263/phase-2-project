@@ -12,7 +12,7 @@ function Movielist({movieData}) {
     return (
         <div>
             
-            <h3>{movies}</h3>
+            {movies}
             
         </div>
        
