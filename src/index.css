@@ -53,16 +53,36 @@ body {
 }
 
 .nav {
-    background-color: #333;
+    /* background-color: cornsilk;
     color: white;
     text-align: center;
     display: flex;
     
     width: 25%;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0 1rem; */
+    background-color: cornsilk;
+  display: inline-block;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  
+  color:  white;
+  border-bottom: 4px solid black;
+  transition: 0.1s;
+
     
-    /* position: absolute;
-    top: 0px;  moves nav links to top of page but leaves blank strip at bottom of page*/
+   
     
+}
+
+nav a:hover,
+nav a:active {
+  color: whitesmoke;
+  border-bottom: 2px solid tomato;
+}
+
+nav a.active {
+  background-color: black;
+  color: white;
 }
