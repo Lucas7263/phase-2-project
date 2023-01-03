@@ -43,7 +43,7 @@ function App() {
                  
                     <Switch>
                         <Route path="/AddMovie">
-                            <AddMovie />
+                            <AddMovie newMovie={movieData}/>
                         </Route>
                      
                         <Route path={page}>

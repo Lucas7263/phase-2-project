@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function AddMovie() {
+function AddMovie({ newMovie }) {
+
+    console.log(newMovie)
     return(
-        <div>
-            <h2>Movie submit goes here</h2>
-         
+        // const [movie, SetMovie] = useState({
+
+        // })
+        <div className="addmovie">
+            <h2>Add New Movie</h2>
+            <form >
+                <label>
+                    Name
+                    <input type="text" placeholder='Name'></input>
+                </label>
+                <label>
+                    Movie Poster
+                    <input type="text" placeholder='movie poster'></input>
+                </label>
+                <label>
+                    About
+                    <input type="text" placeholder='Movie Synopsis'></input>
+                </label>
+          
+            </form>
+           
+            
         </div>
         
     )

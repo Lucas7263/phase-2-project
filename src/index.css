@@ -61,7 +61,7 @@ body {
     width: 25%;
     gap: 1rem;
     padding: 0 1rem; */
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
   display: inline-block;
   margin: 1rem 2rem;
   text-decoration: none;
@@ -79,7 +79,7 @@ body {
 nav a:hover,
 nav a:active {
   color: whitesmoke;
-  border-bottom: 2px solid tomato;
+  border-bottom: 2px solid whitesmoke;
 }
 
 nav a.active {
