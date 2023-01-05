@@ -69,11 +69,7 @@ body {
   
   color:  white;
   border-bottom: 4px solid black;
-  transition: 0.1s;
-
-    
-   
-    
+  transition: 0.1s; 
 }
 
 nav a:hover,
@@ -85,4 +81,41 @@ nav a:active {
 nav a.active {
   background-color: black;
   color: white;
+}
+
+.addmovie {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.label {
+    /* display: flex;
+    padding: 100px; */
+    
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+  width: 400px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  padding: 100px;
+  
+}
+
+ .input {
+    /* padding: 12px 20px;
+    margin: 4px 0;
+    width: 250px;
+    display: flex;
+    border: 2px solid rgb(15, 12, 12);
+    border-radius: 4px;
+    box-sizing: border-box; */
+
+    height: 20px;
+  flex: 0 0 200px;
+  margin-left: 10px;
+  
 }

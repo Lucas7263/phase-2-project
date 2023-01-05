@@ -10,19 +10,19 @@ function AddMovie({ newMovie }) {
         <div className="addmovie">
             <h2>Add New Movie</h2>
             <form >
-                <label>
+                <label className="label">
                     Name
-                    <input type="text" placeholder='Name'></input>
+                    <input className="input" type="text" placeholder='Name'></input>
                 </label>
-                <label>
+                <label className="label">
                     Movie Poster
-                    <input type="text" placeholder='movie poster'></input>
+                    <input  className="input" type="text" placeholder='movie poster'></input>
                 </label>
-                <label>
+                <label className="label">
                     About
-                    <input type="text" placeholder='Movie Synopsis'></input>
+                    <input  className="input" type="text" placeholder='Movie Synopsis'></input>
                 </label>
-          
+                    <button type="submit">Submit</button>
             </form>
            
             
