@@ -91,10 +91,9 @@ nav a.active {
 }
 
 .label {
-    /* display: flex;
-    padding: 100px; */
-    
-    display: flex;
+   
+  margin: auto;  
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   text-align: right;
