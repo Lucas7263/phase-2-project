@@ -1,29 +1,53 @@
 import React, { useState } from 'react';
 
-function AddMovie({ newMovie }) {
+function AddMovie({ addMovie }) {
+   const [name, setName] = useState("");
+   const [image, setImage] = useState("");
+   const [about, setAbout] = useState("");
+  
+   function handleNameChange(e) {
+    setName(e.target.value)
+   }
+   
+   function handleImageChange(e) {
+    setImage(e.target.value)
+   }
 
-    console.log(newMovie)
+   function handleAboutChange(e){
+    setAbout(e.target.value)
+   }
+   
+   function handleSubmit(e) {
+    e.preventDefault()
+    addMovie({
+        name,
+        image,
+        about
+    })
+   }
     return(
-        // const [movie, SetMovie] = useState({
-
-        // })
+      
         <div className="addmovie">
             <h2>Add New Movie</h2>
-            <form >
+            <form onSubmit={handleSubmit}>
                 <label className="label">
-                    Name
-                    <input className="input" type="text" placeholder='Name'></input>
-                </label>
+                    <h3>Movie Title</h3>
+                    </label>
+                    <input className="input" type="text" placeholder='Title' onChange={handleNameChange} value={name}></input>
+                
                 <label className="label">
                     Movie Poster
-                    <input  className="input" type="text" placeholder='movie poster'></input>
+                    <input  className="input" type="text" placeholder='movie poster' onChange={handleImageChange} value={image}></input>
                 </label>
                 <label className="label">
-                    About
-                    <input  className="input" type="text" placeholder='Movie Synopsis'></input>
+                    Blurb
+                    <input  className="input" type="text" placeholder='Write a blurb' onChange={handleAboutChange} value={about}></input>
                 </label>
-                    <button type="submit">Submit</button>
-            </form>
+                <button type="submit">Submit</button>
+                </form>
+
+                    
+            
            
             
         </div>

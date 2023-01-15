@@ -61,14 +61,16 @@ body {
     width: 25%;
     gap: 1rem;
     padding: 0 1rem; */
+   
     /* background-color: cornsilk; */
-  display: inline-block;
+    /* border-bottom: 4px solid black; */
+  display: flex;
   margin: 1rem 2rem;
   text-decoration: none;
   font-size: 1.2em;
-  
+  justify-content: center;
   color:  white;
-  border-bottom: 4px solid black;
+  
   transition: 0.1s; 
 }
 
@@ -79,7 +81,7 @@ nav a:active {
 }
 
 nav a.active {
-  background-color: black;
+  background-color: gray;
   color: white;
 }
 
@@ -95,7 +97,7 @@ nav a.active {
   margin: auto;  
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: right;
   width: 400px;
   line-height: 26px;

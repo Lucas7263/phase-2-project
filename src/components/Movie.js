@@ -5,7 +5,7 @@ import React from 'react';
 function Movie({movie}) {
     const {name, image, about, id} = movie
     
-    
+    //change the name prop to title for clarity
     return (
         <div className='movie'>
             <h2>{name}</h2>

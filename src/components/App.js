@@ -29,6 +29,10 @@ function App() {
 
     }, [])
     
+
+    function addMovie(newMovie) {
+      console.log(newMovie)
+    }
     // toggleDarkMode={toggleDarkMode}
     // <Header darkMode={darkMode} handleClick={handleClick}/>
     return (
@@ -43,7 +47,7 @@ function App() {
                  
                     <Switch>
                         <Route path="/AddMovie">
-                            <AddMovie newMovie={movieData}/>
+                            <AddMovie  addMovie={addMovie}/>
                         </Route>
                      
                         <Route path={page}>
