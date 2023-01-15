@@ -32,6 +32,7 @@ function App() {
 
     function addMovie(newMovie) {
       console.log(newMovie)
+      setMovieData([...movieData, newMovie])
     }
     // toggleDarkMode={toggleDarkMode}
     // <Header darkMode={darkMode} handleClick={handleClick}/>

@@ -24,6 +24,8 @@ function AddMovie({ addMovie }) {
         image,
         about
     })
+
+    
    }
     return(
       
