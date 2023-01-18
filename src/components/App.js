@@ -31,11 +31,20 @@ function App() {
     
 
     function addMovie(newMovie) {
-      console.log(newMovie)
-      setMovieData([...movieData, newMovie])
-    }
-    // toggleDarkMode={toggleDarkMode}
-    // <Header darkMode={darkMode} handleClick={handleClick}/>
+      // fetch('http://localhost:8000/movies', {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(newMovie),
+      // })
+      //   .then((res) => res.json())
+      //   .then((newItem) => console.log(newItem))
+           
+
+      setMovieData(movie => [...movie, newMovie])
+    } //next step is to add the new movie from the form to the movieData json database. Do a POST request.
+    
     return (
             <div className={darkMode ? "App" : "App-light"}>
                <button className="darkmodebutton" onClick={handleClick}>{buttonTextContent}</button>
@@ -70,3 +79,14 @@ export default App;
 
                 // json-server --watch movieData.json --port 8000
                 //command for watching my server
+
+                // toggleDarkMode={toggleDarkMode}
+    // <Header darkMode={darkMode} handleClick={handleClick}/>
+
+
+    // Starhip Troopers info
+    // Starship Troopers
+    
+    // https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Starship_Troopers_-_movie_poster.jpg/220px-Starship_Troopers_-_movie_poster.jpg
+
+    // Humans in a fascist, militaristic future wage war with giant alien bugs.
