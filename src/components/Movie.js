@@ -2,16 +2,23 @@ import React from 'react';
 
 
 
-function Movie({movie}) {
+function Movie({movie, deleteMovie}) {
+      
+
     const {name, image, about, id} = movie
     
-    //change the name prop to title for clarity
+    function deletesMovie() {
+     
+        deleteMovie(id)
+    }
+
+    // PATCH request should go in this component I think.
     return (
         <div className='movie'>
             <h2>{name}</h2>
             <img src={image} alt={name}></img>
             <p>{about}</p>
-            <button className='movieButton'>Delete</button>
+            <button className='movieButton' onClick={deletesMovie}>Delete</button>
             <button className='movieButton'>Update</button>
         </div>
     )

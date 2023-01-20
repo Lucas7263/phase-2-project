@@ -19,6 +19,7 @@ function AddMovie({ addMovie }) {
    
    function handleSubmit(e) {
     e.preventDefault()
+    console.log("submited")
     addMovie({
         name,
         image,

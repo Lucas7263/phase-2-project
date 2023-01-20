@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Movie from './Movie';
 
 
-function Movielist({movieData}) {
-  
+function Movielist({movieData, deleteMovie}) {
+
    const movies = movieData.map(movie => {
-          return (<Movie key={movie.id} movie={movie}/>
+          return (<Movie key={movie.id} movie={movie} deleteMovie={deleteMovie} />
+        
           )
    })  
-  
+            
     return (
         <div>
-            
+          
             {movies}
             
         </div>

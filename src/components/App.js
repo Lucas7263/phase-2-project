@@ -5,6 +5,8 @@ import NavBar from './NavBar';
 import { Switch, Route} from "react-router-dom";
 import AddMovie from './AddMovie';
 
+// import Movie from './Movie';
+
 
 
 
@@ -31,37 +33,45 @@ function App() {
     
 
     function addMovie(newMovie) {
-      // fetch('http://localhost:8000/movies', {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(newMovie),
-      // })
-      //   .then((res) => res.json())
-      //   .then((newItem) => console.log(newItem))
-           
-
-      setMovieData(movie => [...movie, newMovie])
-    } //next step is to add the new movie from the form to the movieData json database. Do a POST request.
+      fetch('http://localhost:8000/movies', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newMovie),
+      })
+        .then((res) => res.json())
+        .then((newItem) => setMovieData(movie => [...movie, newMovie]))
+    } 
     
+    function handleDeleteMovie(deletedItem) {
+      // console.log("Delete Movie");
+      console.log(deletedItem)
+      fetch(`http://localhost:8000/movies/${deletedItem}`, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then(() => setMovieData(deletedItem))
+    }
+  
+
+
     return (
             <div className={darkMode ? "App" : "App-light"}>
                <button className="darkmodebutton" onClick={handleClick}>{buttonTextContent}</button>
                 <Header />
                 
-               
-              
-                 
-                  <NavBar onPageChange={setPage} />
-                 
+                <NavBar onPageChange={setPage} />
+
+                {/* <Movie deleteMovie={handleDeleteMovie}/>  */}
+
                     <Switch>
                         <Route path="/AddMovie">
                             <AddMovie  addMovie={addMovie}/>
                         </Route>
                      
                         <Route path={page}>
-                            <MovieList movieData={movieData}/>
+                            <MovieList movieData={movieData} deleteMovie={handleDeleteMovie}/>
                         </Route> 
                     </Switch>       
                   
@@ -90,3 +100,15 @@ export default App;
     // https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Starship_Troopers_-_movie_poster.jpg/220px-Starship_Troopers_-_movie_poster.jpg
 
     // Humans in a fascist, militaristic future wage war with giant alien bugs.
+
+
+
+    // Predator
+    // https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Predator_Movie.jpg/220px-Predator_Movie.jpg
+    // A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.
+    //
+    //
+
+    // Ghostbusters
+    // https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Ghostbusters_%281984%29_theatrical_poster.png/220px-Ghostbusters_%281984%29_theatrical_poster.png
+    // Three parapsychologists forced out of their university funding set up shop as a unique ghost removal service in New York City, attracting frightened yet skeptical customers.
