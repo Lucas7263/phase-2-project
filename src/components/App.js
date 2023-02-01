@@ -47,11 +47,7 @@ function App() {
     
     function handleDeleteMovie(id) {
       const updatedMovies = movieData.filter((movie) => movie.id !== id)
-      // console.log(updatedMovies)
-          setMovieData(updatedMovies)
-  
-     
-     
+          setMovieData(updatedMovies)    
     };
   
 
@@ -89,8 +85,7 @@ export default App;
                 // json-server --watch movieData.json --port 8000
                 //command for watching my server
 
-                // toggleDarkMode={toggleDarkMode}
-    // <Header darkMode={darkMode} handleClick={handleClick}/>
+  
 
 
     // Starhip Troopers info
