@@ -9,10 +9,14 @@ function Movie({movie, deleteMovie}) {
     
     function deletesMovie() {
      
-        deleteMovie(id)
+        fetch(`http://localhost:8000/movies/${id}`, {
+            method: "DELETE",
+          })
+            .then((res) => res.json())
+            .then(() =>  deleteMovie(id))
+       
     }
-
-    // PATCH request should go in this component I think.
+   
     return (
         <div className='movie'>
             <h2>{name}</h2>

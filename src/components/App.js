@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import { Switch, Route} from "react-router-dom";
 import AddMovie from './AddMovie';
 
-// import Movie from './Movie';
+
 
 
 
@@ -15,44 +15,44 @@ import AddMovie from './AddMovie';
 
 function App() {
    const [darkMode, setDarkMode] = useState(true);
-  const [movieData, setMovieData] = useState([]);
-   const [page, setPage] = useState("/")
-  function toggleDarkMode() {
+   const [movieData, setMovieData] = useState([]);
+   const [page, setPage] = useState("/");
+  
+   function toggleDarkMode() {
     setDarkMode(!darkMode)
-    
-   } 
-   const handleClick = () => toggleDarkMode()
-   const buttonTextContent = darkMode ? "Light Mode" : "Dark Mode"
+   }; 
+   
+   const handleClick = () => toggleDarkMode();
+   const buttonTextContent = darkMode ? "Light Mode" : "Dark Mode";
   
     useEffect(() => {
       fetch( 'http://localhost:8000/movies')
       .then(res => res.json())
       .then(data => setMovieData(data))
 
-    }, [])
+    }, []);
     
 
-    function addMovie(newMovie) {
+    function addMovie(formData) {
       fetch('http://localhost:8000/movies', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(newMovie),
+        body: JSON.stringify(formData),
       })
         .then((res) => res.json())
-        .then((newItem) => setMovieData(movie => [...movie, newMovie]))
-    } 
+        .then((newMovie) => setMovieData(movies => [...movies, newMovie]))
+    }; 
     
-    function handleDeleteMovie(deletedItem) {
-      // console.log("Delete Movie");
-      console.log(deletedItem)
-      fetch(`http://localhost:8000/movies/${deletedItem}`, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then(() => setMovieData(deletedItem))
-    }
+    function handleDeleteMovie(id) {
+      const updatedMovies = movieData.filter((movie) => movie.id !== id)
+      // console.log(updatedMovies)
+          setMovieData(updatedMovies)
+  
+     
+     
+    };
   
 
 
@@ -63,7 +63,6 @@ function App() {
                 
                 <NavBar onPageChange={setPage} />
 
-                {/* <Movie deleteMovie={handleDeleteMovie}/>  */}
 
                     <Switch>
                         <Route path="/AddMovie">
@@ -74,11 +73,11 @@ function App() {
                             <MovieList movieData={movieData} deleteMovie={handleDeleteMovie}/>
                         </Route> 
                     </Switch>       
-                  
+              
                   
                 </div>
                               
-       
+       //make a home page for last navbar
     )
 }
 

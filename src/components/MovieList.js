@@ -1,19 +1,24 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Movie from './Movie';
 
 
 function Movielist({movieData, deleteMovie}) {
 
    const movies = movieData.map(movie => {
-          return (<Movie key={movie.id} movie={movie} deleteMovie={deleteMovie} />
-        
-          )
-   })  
-            
+          return (<Movie  key={movie.id} movie={movie} deleteMovie={deleteMovie} />
+                 
+          )     
+   });  
+   
+//    key={movie.id} 
     return (
-        <div>
+        
+        <div >
+           
+            { movies }
           
-            {movies}
+            
+       
             
         </div>
        
@@ -23,5 +28,3 @@ function Movielist({movieData, deleteMovie}) {
 export default Movielist
 
 
-//make new movie compenent for each movie
-//use movielist component to map through data and destructure

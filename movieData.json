@@ -19,16 +19,16 @@
       "about": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
     },
     {
-      "name": "Starship Troopers",
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Starship_Troopers_-_movie_poster.jpg/220px-Starship_Troopers_-_movie_poster.jpg",
-      "about": "Humans in a fascist, militaristic future wage war with giant alien bugs.",
-      "id": 4
-    },
-    {
       "name": " Predator",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Predator_Movie.jpg/220px-Predator_Movie.jpg",
       "about": "A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.",
       "id": 5
+    },
+    {
+      "name": "The Burbs",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Burbsposter.jpg/220px-Burbsposter.jpg",
+      "about": "An overstressed suburbanite and his neighbors are convinced that the new family on the block is part of a murderous Satanic cult.",
+      "id": 6
     }
   ]
 }
