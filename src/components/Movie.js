@@ -23,7 +23,6 @@ function Movie({movie, deleteMovie}) {
             <img src={image} alt={name}></img>
             <p>{about}</p>
             <button className='movieButton' onClick={deletesMovie}>Delete</button>
-            <button className='movieButton'>Update</button>
         </div>
     )
 }
