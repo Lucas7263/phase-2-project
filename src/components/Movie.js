@@ -21,7 +21,7 @@ function Movie({movie, deleteMovie}) {
         <div className='movie'>
             <h2>{name}</h2>
             <img src={image} alt={name}></img>
-            <p>{about}</p>
+            <p className='movietext'>{about}</p>
             <button className='movieButton' onClick={deletesMovie}>Delete</button>
         </div>
     )

@@ -8,7 +8,8 @@ function NavBar() {
             <div>
                 <nav className='nav'>
                      <ol>
-                        <NavLink  exact to="/Movies">Movies</NavLink>
+                        <NavLink to="/Home">Home</NavLink>
+                        <NavLink  exact to="/MovieList">Movies</NavLink>
                         <NavLink  to="/AddMovie">Add Movie</NavLink>
                     </ol>   
                 </nav>

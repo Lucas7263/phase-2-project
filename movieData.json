@@ -29,6 +29,12 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Burbsposter.jpg/220px-Burbsposter.jpg",
       "about": "An overstressed suburbanite and his neighbors are convinced that the new family on the block is part of a murderous Satanic cult.",
       "id": 6
+    },
+    {
+      "name": "Ghostbusters",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Ghostbusters_%281984%29_theatrical_poster.png/220px-Ghostbusters_%281984%29_theatrical_poster.png",
+      "about": "Three parapsychologists forced out of their university funding set up shop as a unique ghost removal service in New York City, attracting frightened yet skeptical customers.",
+      "id": 7
     }
   ]
 }

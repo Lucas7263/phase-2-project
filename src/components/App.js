@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Header from "./Header";
 import MovieList from './MovieList';
 import NavBar from './NavBar';
+import Home from './Home'
 import { Switch, Route} from "react-router-dom";
 import AddMovie from './AddMovie';
 
@@ -61,13 +62,17 @@ function App() {
 
 
                     <Switch>
+                      
                         <Route path="/AddMovie">
                             <AddMovie  addMovie={addMovie}/>
                         </Route>
                      
-                        <Route path={page}>
+                        <Route path="/MovieList">
                             <MovieList movieData={movieData} deleteMovie={handleDeleteMovie}/>
                         </Route> 
+                        <Route path={page}>
+                            <Home />
+                        </Route>
                     </Switch>       
               
                   
