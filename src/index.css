@@ -10,7 +10,7 @@ body {
 }
 
  .App-light {
-    background-color: rgb(51, 159, 163);
+    background-color: rgb(58, 112, 182);
 }
 
 .title {
@@ -25,9 +25,7 @@ body {
     background-color: rgb(165, 165, 236);
     padding: 10px;
     margin: auto;
-    display: flex;
-    
-    
+    display: flex;  
 }
 
 .movie {
@@ -54,36 +52,28 @@ body {
 }
 
 .nav {
-    /* background-color: cornsilk;
-    color: white;
-    text-align: center;
-    display: flex;
-    
-    width: 25%;
-    gap: 1rem;
-    padding: 0 1rem; */
-   
-    /* background-color: cornsilk; */
-    /* border-bottom: 4px solid black; */
   display: flex;
   margin: 1rem 2rem;
-  text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   justify-content: center;
-  color:  white;
-  
   transition: 0.1s; 
+}
+
+nav .list {
+  display: flex;
+  padding: 10px;
+  
 }
 
 nav a:hover,
 nav a:active {
-  color: whitesmoke;
-  border-bottom: 2px solid whitesmoke;
+  color: aqua;
+  
 }
 
 nav a.active {
-  background-color: gray;
-  color: white;
+  background-color: rgb(23, 156, 29);
+  color: rgb(160, 63, 82);
 }
 
 .addmovie {
@@ -108,15 +98,7 @@ nav a.active {
 }
 
  .input {
-    /* padding: 12px 20px;
-    margin: 4px 0;
-    width: 250px;
-    display: flex;
-    border: 2px solid rgb(15, 12, 12);
-    border-radius: 4px;
-    box-sizing: border-box; */
-
-    height: 20px;
+  height: 20px;
   flex: 0 0 200px;
   margin-left: 10px;
   
@@ -125,9 +107,13 @@ nav a.active {
   .homepage {
     margin: auto;
     text-align: center;
-    padding: 95px 0;
+    padding: 85px 0;
     font-size: 35px;
     
+  }
+
+  .homepage .luke {
+    color:rgba(182, 25, 182, 0.849)
   }
 
   .homepage .favorite {

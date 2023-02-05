@@ -7,11 +7,11 @@ function NavBar() {
         return (
             <div>
                 <nav className='nav'>
-                     <ol>
-                        <NavLink to="/Home">Home</NavLink>
-                        <NavLink  exact to="/MovieList">Movies</NavLink>
-                        <NavLink  to="/AddMovie">Add Movie</NavLink>
-                    </ol>   
+                     <ul className="list">
+                        <ol><NavLink to="/Home">Home</NavLink></ol>
+                        <ol><NavLink  exact to="/MovieList">Movies</NavLink></ol>
+                        <ol><NavLink  to="/AddMovie">Add Movie</NavLink></ol>
+                    </ul>   
                 </nav>
             </div>  
         )
