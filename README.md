@@ -1,5 +1,7 @@
 # phase-2-project
 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/107516857/218320983-d52ee587-58b1-4440-a090-c5221d2b618d.gif)
+
 # Luke's Favorite Movies List
 
 This is a simple React application which consists of 7 components. 
@@ -35,5 +37,5 @@ foobar.pluralize('goose')
 foobar.singularize('phenomena')
 ```
 
-## Contributing
+
 
