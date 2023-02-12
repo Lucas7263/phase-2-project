@@ -5,7 +5,9 @@
 # Luke's Favorite Movies List
 This is a simple application which displays three seperate pages using client-side routing. 
 
-The first initial page that is diplayed when the application is loaded is the home page. On this home page is 
+The first initial page that is diplayed when the application is loaded is the home page.
+
+On this home page are some simple texts describing what 
 
                 
                 
